@@ -1,8 +1,8 @@
 const headerStyle = 'font-size: 24px; font-weight: bold; font-family: sans-serif;'
 const subheaderStyle = 'font-size: 16px; font-weight: bold; font-family: sans-serif;'
 
-console.log('%cQuotes by William Shakespeare", headerStyle)
-
+console.log('%cQuotes by William Shakespeare", headerStyle' 
+)
 /**
  * Converts the quotes array into a plays object
  * Each play title will serve as a key
@@ -20,11 +20,10 @@ const plays = {}
 for (const quote of quotes) {
   // Creates a new key with the play title, if it does exists
   if (!plays[quote.play]) {
-    play[quote.play] = []
-  } else {
+    plays[quote.play] = []
+  } 
     // Adds the quote text to the array of the respective play
-    plays[quote.play].push(quote)
-  }
+    plays[quote.play].push(quote.quote)
 }
 
 /* HINT: Use console.table to see the plays object */
@@ -37,7 +36,7 @@ for (const quote of quotes) {
 for (const play in plays) {
   console.log('')
   console.log(`%c${play}`, subheaderStyle)
-  for (let i = 1; i < plays[play].length, i++) {
-    console.log(`${i}. ${plays[play][i]}`)
+  for (let i = 0; i < plays[play].length; i++) {
+    console.log(`${i+1}. ${plays[play][i]}`)
   }
 }

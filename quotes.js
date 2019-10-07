@@ -11,10 +11,10 @@ const quotes = [
     quote: 'Romeo, Romeo! wherefore art thou Romeo?',
     play: 'Romeo and Juliet'
   },
-  [
+  {
     quote: 'Now is the winter of our discontent',
     play: 'Richard III'
-  ],
+  },
   {
     quote: 'Is this a dagger which I see before me, the handle toward my hand?',
     play: 'Macbeth'
@@ -85,8 +85,8 @@ const quotes = [
   },
   {
     quote: 'To thine own self be true.',
-    play: ' Hamlet'
-  }
+    play: 'Hamlet'
+  },
   {
     quote: 'All that glisters is not gold.',
     play: 'The Merchant'
@@ -108,7 +108,7 @@ const quotes = [
     play: 'A Midsummer Night’s Dream'
   },
   {
-    quote: "Cry "havoc!" and let slip the dogs of war",
+    quote: 'Cry havoc! and let slip the dogs of war',
     play: 'Julius Caesar'
   },
   {
